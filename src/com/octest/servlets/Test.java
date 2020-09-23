@@ -37,6 +37,9 @@ public class Test extends HttpServlet {
 		
 		
 		request.setAttribute("auteur", auteur);
+		
+		String [] titres = {"Nouvel incendie","Une ile a été découverte","Chute du dolar" };
+		request.setAttribute("titres", titres);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
 	}
 
